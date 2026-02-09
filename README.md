@@ -11,6 +11,283 @@ You can treat this as a **React Master Checklist**.
 ---
 
 # ⚛️ REACT JS COMPLETE TOPICS (BASIC → ADVANCED)
+## 🟢 React Questions Index
+
+### 1. React Fundamentals
+1. [What is React](#1-what-is-react)
+2. [Why React](#2-why-react)
+3. [History of React](#3-history-of-react)
+4. [SPA (Single Page Application)](#4-spa-single-page-application)
+5. [React vs Angular vs Vue](#5-react-vs-angular-vs-vue)
+6. [React Architecture](#6-react-architecture)
+7. [React Features](#7-react-features)
+8. [Virtual DOM](#8-virtual-dom)
+9. [Real DOM vs Virtual DOM](#9-real-dom-vs-virtual-dom)
+10. [React Reconciliation](#10-react-reconciliation)
+
+### 2. Environment Setup
+11. [Node.js & npm basics](#11-nodejs--npm-basics)
+12. [npx](#12-npx)
+13. [Create React App](#13-create-react-app-cra)
+14. [Vite](#14-vite)
+15. [Folder Structure](#15-folder-structure)
+16. [Development vs Production build](#16-development-vs-production-build)
+17. [Babel](#17-babel)
+18. [Webpack basics](#18-webpack-basics)
+
+### 3. JSX
+19. [What is JSX](#19-what-is-jsx)
+20. [JSX Syntax](#20-jsx-syntax)
+21. [JSX Expressions](#21-jsx-expressions)
+22. [JSX Attributes](#22-jsx-attributes)
+23. [JSX Fragments](#23-jsx-fragments)
+24. [JSX vs HTML](#24-jsx-vs-html)
+25. [Conditional Rendering in JSX](#25-conditional-rendering-in-jsx)
+
+### 4. Components
+26. [What is a Component](#26-what-is-a-component)
+27. [Functional Components](#27-functional-components)
+28. [Class Components](#28-class-components)
+29. [Stateless Components](#29-stateless-components)
+30. [Stateful Components](#30-stateful-components)
+31. [Reusable Components](#31-reusable-components)
+32. [Component Naming Rules](#32-component-naming-rules)
+33. [Component Composition](#33-component-composition)
+
+### 5. Props
+34. [Props Introduction](#34-props-introduction)
+35. [Passing Props](#35-passing-props)
+36. [Props Destructuring](#36-props-destructuring)
+37. [Default Props](#37-default-props)
+38. [Props Validation](#38-props-validation)
+39. [Children Props](#39-children-props)
+40. [Props vs State](#40-props-vs-state)
+
+### 6. State
+41. [What is State](#41-what-is-state)
+42. [useState Hook](#42-usestate-hook)
+43. [Updating State](#43-updating-state)
+44. [State Immutability](#44-state-immutability)
+45. [Lifting State Up](#45-lifting-state-up)
+46. [Controlled Components](#46-controlled-components)
+47. [Uncontrolled Components](#47-uncontrolled-components)
+
+### 7. Event Handling
+48. [Handling Events in React](#48-handling-events-in-react)
+49. [Synthetic Events](#49-synthetic-events)
+50. [Passing Arguments to Events](#50-passing-arguments-to-events)
+51. [Event Binding](#51-event-binding)
+52. [Prevent Default](#52-prevent-default)
+53. [Event Bubbling](#53-event-bubbling-in-react)
+
+### 8. Conditional Rendering
+54. [if-else Rendering](#54-if-else-rendering)
+55. [Ternary Operator](#55-ternary-operator)
+56. [Logical AND](#56-logical-and-)
+57. [Switch Case Rendering](#57-switch-case-rendering)
+58. [Conditional Components](#58-conditional-components)
+
+### 9. Lists & Keys
+59. [Rendering Lists](#59-rendering-lists)
+60. [map in JSX](#60-map-in-jsx)
+61. [Keys](#61-keys)
+62. [Index as Key](#62-index-as-key-antipattern)
+63. [Dynamic Lists](#63-dynamic-lists)
+
+### 10. Styling
+64. [CSS in React](#64-css-in-react)
+65. [Inline Styling](#65-inline-styling)
+66. [CSS Modules](#66-css-modules)
+67. [Styled Components](#67-styled-components)
+68. [SCSS/SASS](#68-scsssass)
+69. [Tailwind CSS](#69-tailwind-css)
+70. [Dynamic Styles](#70-dynamic-styles)
+
+### 11. Forms
+71. [Forms in React](#71-forms-in-react)
+72. [Controlled Forms](#72-controlled-forms)
+73. [Uncontrolled Forms](#73-uncontrolled-forms)
+74. [Form Validation](#74-form-validation)
+75. [Multiple Inputs](#75-multiple-inputs)
+76. [Checkbox & Radio](#76-handling-checkbox--radio)
+77. [Select Dropdown](#77-select-dropdown)
+
+### 12. Hooks Core
+78. [What are Hooks](#78-what-are-hooks)
+79. [Rules of Hooks](#79-rules-of-hooks)
+80. [useState](#80-usestate)
+81. [useEffect](#81-useeffect)
+82. [useEffect Cleanup](#82-useeffect-cleanup)
+83. [Dependency Array](#83-dependency-array)
+84. [Multiple useEffect](#84-multiple-useeffect)
+
+### 13. Hooks Advanced
+85. [useContext](#85-usecontext)
+86. [Context API](#86-context-api)
+87. [useReducer](#87-usereducer)
+88. [useRef](#88-useref)
+89. [useImperativeHandle](#89-useimperativehandle)
+90. [useLayoutEffect](#90-uselayouteffect)
+91. [useCallback](#91-usecallback)
+92. [useMemo](#92-usememo)
+### 13. Hooks Advanced (continued)
+93. [Custom Hooks](#93-custom-hooks)
+
+### 14. Lifecycle Methods
+94. [Component Lifecycle](#94-component-lifecycle)
+95. [Mounting Phase](#95-mounting-phase)
+96. [Updating Phase](#96-updating-phase)
+97. [Unmounting Phase](#97-unmounting-phase)
+98. [componentDidMount](#98-componentdidmount)
+99. [componentDidUpdate](#99-componentdidupdate)
+100. [componentWillUnmount](#100-componentwillunmount)
+101. [getDerivedStateFromProps](#101-getderivedstatefromprops)
+102. [shouldComponentUpdate](#102-shouldcomponentupdate)
+
+### 15. Context API
+103. [Context API Introduction](#103-context-api-introduction)
+104. [createContext](#104-createcontext)
+105. [Provider](#105-provider)
+106. [Consumer](#106-consumer)
+107. [useContext vs Props Drilling](#107-usecontext-vs-props-drilling)
+
+### 16. Routing
+108. [React Router Introduction](#108-react-router-introduction)
+109. [react-router-dom](#109-react-router-dom)
+110. [BrowserRouter](#110-browserrouter)
+111. [Routes & Route](#111-routes--route)
+112. [Link & NavLink](#112-link--navlink)
+113. [useParams](#113-useparams)
+114. [useNavigate](#114-usenavigate)
+115. [useLocation](#115-uselocation)
+116. [Nested Routes](#116-nested-routes)
+117. [Protected Routes](#117-protected-routes)
+118. [404 Page Handling](#118-404-page-handling)
+
+### 17. Data Fetching
+119. [Fetch API](#119-fetch-api)
+120. [Axios](#120-axios)
+121. [GET Requests](#121-get-requests)
+122. [POST Requests](#122-post-requests)
+123. [PUT & DELETE Requests](#123-put--delete-requests)
+124. [Loading States](#124-loading-states)
+125. [Error Handling](#125-error-handling)
+126. [API Integration Patterns](#126-api-integration-patterns)
+
+### 18. State Management
+127. [Local State](#127-local-state)
+128. [Global State](#128-global-state)
+129. [Redux Introduction](#129-redux-introduction)
+130. [Redux Core Concepts](#130-redux-core-concepts)
+131. [Store](#131-store)
+132. [Actions](#132-actions)
+133. [Reducers](#133-reducers)
+134. [Redux Flow](#134-redux-flow)
+135. [Redux Toolkit](#135-redux-toolkit)
+136. [createSlice](#136-createslice)
+137. [configureStore](#137-configurestore)
+138. [useSelector](#138-useselector)
+139. [useDispatch](#139-usedispatch)
+140. [Middleware](#140-middleware)
+141. [Thunk](#141-thunk)
+142. [Redux vs Context API](#142-redux-vs-context-api)
+143. [Zustand](#143-zustand)
+144. [Recoil](#144-recoil)
+
+### 19. Performance
+145. [React.memo](#145-reactmemo)
+146. [useMemo](#146-usememo)
+147. [useCallback](#147-usecallback)
+148. [Code Splitting](#148-code-splitting)
+149. [Lazy Loading](#149-lazy-loading)
+150. [React.lazy](#150-reactlazy)
+151. [Suspense](#151-suspense)
+152. [Avoid Re-renders](#152-avoid-re-renders)
+153. [Virtualization](#153-virtualization)
+
+### 20. Error Handling
+154. [Error Boundaries](#154-error-boundaries)
+155. [try-catch in React](#155-try-catch-in-react)
+156. [Fallback UI](#156-fallback-ui)
+157. [Logging Errors](#157-logging-errors)
+
+### 21. Refs & DOM
+158. [Refs Introduction](#158-refs-introduction)
+159. [useRef](#159-useref)
+160. [Forward Refs](#160-forward-refs)
+161. [DOM Manipulation](#161-dom-manipulation)
+162. [Focus Management](#162-focus-management)
+
+### 22. Advanced Patterns
+163. [Higher Order Components](#163-higher-order-components-hoc)
+164. [Render Props](#164-render-props)
+165. [Compound Components](#165-compound-components)
+166. [Controlled vs Uncontrolled Patterns](#166-controlled-vs-uncontrolled-patterns)
+
+### 23. Testing
+167. [Testing Basics](#167-testing-basics)
+168. [Unit Testing](#168-unit-testing)
+169. [Integration Testing](#169-integration-testing)
+170. [Jest](#170-jest)
+171. [React Testing Library](#171-react-testing-library)
+172. [Mocking APIs](#172-mocking-apis)
+173. [Snapshot Testing](#173-snapshot-testing)
+
+### 24. Security
+174. [XSS in React](#174-xss-in-react)
+175. [Sanitizing Inputs](#175-sanitizing-inputs)
+176. [Secure API Calls](#176-secure-api-calls)
+177. [Environment Variables](#177-environment-variables)
+
+### 25. Deployment
+178. [Production Build](#178-production-build)
+179. [Environment Config](#179-environment-config)
+180. [Hosting on Netlify](#180-hosting-on-netlify)
+181. [Hosting on Vercel](#181-hosting-on-vercel)
+182. [CI/CD Basics](#182-cicd-basics)
+
+### 26. Advanced React
+183. [Concurrent Rendering](#183-concurrent-rendering)
+184. [React Fiber](#184-react-fiber)
+185. [Suspense for Data Fetching](#185-suspense-for-data-fetching)
+186. [Server Components](#186-server-components)
+187. [Hydration](#187-hydration)
+188. [Streaming](#188-streaming)
+189. [React 18 Features](#189-react-18-features)
+
+### 27. React + TypeScript
+190. [TypeScript Basics](#190-typescript-basics)
+191. [Typing Props](#191-typing-props)
+192. [Typing State](#192-typing-state)
+193. [Typing Hooks](#193-typing-hooks)
+194. [Generics in React](#194-generics-in-react)
+195. [Interfaces vs Types](#195-interfaces-vs-types)
+
+### 28. Architecture
+196. [Folder Structure Patterns](#196-folder-structure-patterns)
+197. [Atomic Design](#197-atomic-design)
+198. [Feature-based Structure](#198-feature-based-structure)
+199. [Separation of Concerns](#199-separation-of-concerns)
+200. [Clean Code Practices](#200-clean-code-practices)
+
+### 29. Real-world Topics
+201. [Props Drilling](#201-props-drilling)
+202. [State Lifting](#202-state-lifting)
+203. [Anti-patterns](#203-anti-patterns)
+204. [Memory Leaks](#204-memory-leaks)
+205. [Infinite Loops](#205-infinite-loops)
+206. [Controlled Re-rendering](#206-controlled-re-rendering)
+207. [Optimization Strategies](#207-optimization-strategies)
+208. [Common Interview Questions](#208-common-interview-questions)
+
+### 30. Tools
+209. [ESLint](#209-eslint)
+210. [Prettier](#210-prettier)
+211. [Husky](#211-husky)
+212. [Git Hooks](#212-git-hooks)
+213. [Storybook](#213-storybook)
+214. [React DevTools](#214-react-devtools)
+
 
 ---
 
